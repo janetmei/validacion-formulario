@@ -1,3 +1,4 @@
+
 document.getElementById('formulario').addEventListener('submit', (event) => {
     event.preventDefault()
 
@@ -42,7 +43,6 @@ document.getElementById('formulario').addEventListener('submit', (event) => {
     //Si todos los campos son validos, enviar formulario
     if(!errorNombre.textContent && !emailError.textContent && !contrasenaError.textContent){
 
-        //BACKEND QUE RECIBA LA INFORMACIÓN
         alert('El formulario se ha enviado con exito')
         document.getElementById('formulario').reset();
     }
